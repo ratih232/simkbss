@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['nik'])) {
-    $base_url = 'https://farishost.cloud/sibsdp/';
+    $base_url = 'https://farishost.cloud/simkbss/';
     include 'app/koneksi.php';
 
     $sql_profil = "SELECT * FROM tabel_control WHERE id=1";
