@@ -19,7 +19,6 @@
  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
  <!-- Vendor JS Files -->
- <?php var_dump($base_url); ?>
  <script src="<?= $base_url; ?>plugins/jquery/jquery.min.js"></script>
  <script src="<?= $base_url; ?>asset_user/vendor/aos/aos.js"></script>
  <script src="<?= $base_url; ?>asset_user/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

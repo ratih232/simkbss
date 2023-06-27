@@ -1,6 +1,6 @@
 <?php
 if (isset($_GET['terapkan'])) {
-    $base_url = 'http://localhost/simkbs/';
+    $base_url = 'https://farishost.cloud/sibsdp/';
     include 'app/koneksi.php';
 
     $sql_profil = "SELECT * FROM tabel_control WHERE id=1";
