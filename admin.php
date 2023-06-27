@@ -16,7 +16,7 @@ include 'app/koneksi.php';
 
 $sql_profil = "SELECT * FROM tabel_control WHERE id=1";
 $result_profil = $mysqli->query($sql_profil);
-$row_profil = $result_profil->fetch_object();
+$row_profil = $result_profil->fetch(PDO::FETCH_OBJ);
 
 include 'views/layout/header.php';
 include 'views/layout/navbar.php';

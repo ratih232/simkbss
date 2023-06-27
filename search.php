@@ -5,7 +5,7 @@ if (isset($_GET['nik'])) {
 
     $sql_profil = "SELECT * FROM tabel_control WHERE id=1";
     $result_profil = $mysqli->query($sql_profil);
-    $row_profil = $result_profil->fetch_object();
+    $row_profil = $result_profil->fetch(PDO::FETCH_OBJ);
 
     include 'views/layout/user/header.php';
     include 'views/layout/user/navbar.php';

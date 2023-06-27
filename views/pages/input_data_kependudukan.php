@@ -153,7 +153,7 @@
                                     <option hidden>--Pilih Dusun--</option>
                                     <?php  
                                         $result_dusun= $mysqli->query("SELECT * FROM tabel_dusun");
-                                        while($rows_dusun = $result_dusun->fetch_object()) {
+                                        while($rows_dusun = $result_dusun->fetch(PDO::FETCH_OBJ)) {
                                             echo"
                                                 <option value='$rows_dusun->id'>$rows_dusun->dusun</option>
                                             ";

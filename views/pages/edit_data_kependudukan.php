@@ -680,7 +680,7 @@ if (isset($_POST['edit_data'])) {
                                 <option hidden>--Pilih Dusun--</option>
                                     <?php  
                                         $result_dusun= $mysqli->query("SELECT * FROM tabel_dusun");
-                                        while($rows_dusun = $result_dusun->fetch_object()) {
+                                        while($rows_dusun = $result_dusun->fetch(PDO::FETCH_OBJ)) {
 
                                             if($row['dusun'] == $rows_dusun->dusun) {
                                                 echo"

@@ -5,7 +5,7 @@ function tampil_dusun($mysqli)
     $sql = "SELECT * FROM tabel_dusun";
     $result = $mysqli->query($sql);
     $no = 1;
-    while ($row = $result->fetch_object()) {
+    while ($row = $result->fetch(PDO::FETCH_OBJ)) {
         echo "";
 ?>
         <tr>
